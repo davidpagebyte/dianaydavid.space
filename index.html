@@ -29,14 +29,14 @@
         let params = (new URL(document.location)).searchParams;
             if (params.size != 0){
                 axios.post('/visit.php', {
-            })
-            .then(function (response) {
-                console.log('visit registered');
-            })
-            .catch(function (error) {
-                console.log('error registering visit')
-                console.log(error);
-            });
+                })
+                .then(function (response) {
+                    console.log('visit registered');
+                })
+                .catch(function (error) {
+                    console.log('error registering visit')
+                    console.log(error);
+                });
         }
     </script>
 </html>
