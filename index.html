@@ -24,4 +24,19 @@
             <iframe src="https://withjoy.com/dianaydavid" sandbox="allow-forms allow-scripts allow-same-origin" class="second-row"></iframe>
         </div>
     </body>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        let params = (new URL(document.location)).searchParams;
+            if (params.size != 0){
+                axios.post('/visit.php', {
+            })
+            .then(function (response) {
+                console.log('visit registered');
+            })
+            .catch(function (error) {
+                console.log('error registering visit')
+                console.log(error);
+            });
+        }
+    </script>
 </html>
